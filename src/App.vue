@@ -4,7 +4,7 @@
  * @Author: wrh
  * @Date: 2020-10-31 12:27:34
  * @LastEditors: wrh
- * @LastEditTime: 2020-10-31 15:11:33
+ * @LastEditTime: 2020-10-31 15:18:18
 -->
 <template>
 <div v-for="(item,index) in products" :key="item" @click="selectProductFun(index)">{{item}}</div>
@@ -43,6 +43,7 @@ export default {
     // }
     let data: DataProps = reactive({
       products: [
+        '雪碧',
         '可乐',
         '瓜子',
         '矿泉水',
