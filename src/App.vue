@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: wrh
+ * @Date: 2020-10-31 12:27:34
+ * @LastEditors: wrh
+ * @LastEditTime: 2020-10-31 15:11:33
+-->
 <template>
 <div v-for="(item,index) in products" :key="item" @click="selectProductFun(index)">{{item}}</div>
 <div>{{product}}</div>
@@ -35,6 +43,7 @@ export default {
     // }
     let data: DataProps = reactive({
       products: [
+        '可乐',
         '瓜子',
         '矿泉水',
         '八宝粥',
